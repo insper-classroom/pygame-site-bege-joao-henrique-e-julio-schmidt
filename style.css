@@ -1,0 +1,226 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #1b1b1b;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  background-color: #111;
+  padding: 18px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: #c8f500; }
+
+/* HERO */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: #1a4a1f;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.52)),
+    url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=1400&q=80') center/cover no-repeat;
+}
+
+#hero h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 72px;
+  font-weight: 900;
+  color: #c8f500;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.8), 0 0 40px rgba(200,245,0,0.25);
+  margin-bottom: 16px;
+}
+
+#hero p {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: #eee;
+  letter-spacing: 1px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+section h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #c8f500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
+
+/* SOBRE */
+.sobre-box {
+  background: #242424;
+  border-radius: 8px;
+  padding: 32px;
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+.sobre-box p { margin-bottom: 12px; }
+.sobre-box p:last-child { margin-bottom: 0; }
+.sobre-box strong { color: #fff; }
+
+.creditos {
+  background: #242424;
+  border-radius: 8px;
+  padding: 18px 32px;
+  color: #aaa;
+  font-size: 15px;
+}
+
+.creditos span { color: #c8f500; font-weight: bold; }
+
+/* FOTOS */
+.fotos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.foto-item img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #333;
+  display: block;
+  transition: border-color 0.2s, transform 0.2s;
+  background: #2a2a2a;
+}
+
+.foto-item img:hover {
+  border-color: #c8f500;
+  transform: scale(1.01);
+}
+
+.foto-placeholder {
+  width: 100%;
+  height: 210px;
+  background: #2a2a2a;
+  border-radius: 8px;
+  border: 2px dashed #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.foto-caption {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* INSTRUÇÕES */
+.instrucoes-box {
+  background: #242424;
+  border-radius: 8px;
+  padding: 32px;
+  color: #ccc;
+}
+
+.instrucao-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid #333;
+}
+
+.instrucao-item:last-child { border-bottom: none; padding-bottom: 0; }
+.instrucao-item:first-child { padding-top: 0; }
+
+.instrucao-num {
+  font-size: 24px;
+  font-weight: 900;
+  color: #c8f500;
+  min-width: 36px;
+  line-height: 1.4;
+}
+
+.instrucao-texto strong { color: #fff; }
+
+.key {
+  display: inline-block;
+  background: #333;
+  border: 1px solid #555;
+  border-bottom: 3px solid #1a1a1a;
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #c8f500;
+  font-family: monospace;
+}
+
+/* VIDEO */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #333;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 28px 20px;
+  background: #111;
+  color: #555;
+  font-size: 14px;
+}
+
+footer span { color: #c8f500; }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tennis Royale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#fotos">Fotos do Jogo</a>
+  <a href="#instrucoes">Instruções</a>
+  <a href="#gameplay">Gameplay</a>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-bg"></div>
+  <h1>Tennis Royale</h1>
+  <p>Domine a quadra. Elimine o seu adversario!</p>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h2>Sobre o Jogo</h2>
+  <div class="sobre-box">
+    <p>
+      <strong>Tennis Royale</strong> é um jogo de tênis 2D desenvolvido em Python com Pygame. Dois jogadores se enfrentam em uma quadra em partidas locais e competitivas.
+    </p>
+    <p>
+      O objetivo é simples: rebata a bola para o lado do adversário sem deixá-la cair no seu lado. Vence quem sobreviver por ultimo!
+    <p>
+      O jogo suporta dois jogadores simultaneamente no mesmo teclado, com controles independentes para cada lado da quadra.
+    </p>
+  </div>
+  <div class="creditos">
+    Jogo feito por <span>Julio</span> e <span>João</span>
+  </div>
+</section>
+
+<!-- FOTOS -->
+<section id="fotos">
+  <h2>Fotos do Jogo</h2>
+  <div class="fotos-grid">
+    <div class="foto-item">
+      <img src="img/tela inicial.png" alt="Tela Inicial — Tennis Royale">
+      <p class="foto-caption">Tela Inicial</p>
+    </div>
+    <div class="foto-item">
+      <img src="img/tela jogo.png" alt="Gameplay — Tennis Royale">
+      <p class="foto-caption">Durante a Partida</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUÇÕES -->
+<section id="instrucoes">
+  <h2>Como Jogar?</h2>
+  <div class="instrucoes-box">
+    <div class="instrucao-item">
+      <span class="instrucao-num">1</span>
+      <p class="instrucao-texto">Execute o jogo com o comando <span class="key">python main.py</span> no terminal.</p>
+    </div>
+    <div class="instrucao-item">
+      <span class="instrucao-num">2</span>
+      <p class="instrucao-texto">
+        <strong>Jogador 1:</strong> Use <span class="key">W</span> e <span class="key">S</span> para mover sua raquete para cima e para baixo.
+      </p>
+    </div>
+    <div class="instrucao-item">
+      <span class="instrucao-num">3</span>
+      <p class="instrucao-texto">
+        <strong>Jogador 2:</strong> Use <span class="key">↑</span> e <span class="key">↓</span> para mover sua raquete pelo lado direito da quadra.
+      </p>
+    </div>
+    <div class="instrucao-item">
+      <span class="instrucao-num">4</span>
+      <p class="instrucao-texto">Rebata a bola e vença o ponto. Quem tirar as <strong>5 vidas</strong> do adversario primeiro vence a partida!</p>
+    </div>
+  </div>
+</section>
+
+<!-- GAMEPLAY -->
+<section id="gameplay">
+  <h2>Video Gameplay</h2>
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/xf9e3c-nMRA?rel=0&modestbranding=1"
+      title="Tennis Royale Gameplay"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Tennis Royale &nbsp;·&nbsp; Feito por <span>Julio</span> e <span>João</span>
+</footer>
+
+</body>
+</html>
