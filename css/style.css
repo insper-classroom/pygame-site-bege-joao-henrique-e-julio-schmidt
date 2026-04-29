@@ -201,6 +201,19 @@ section h2 {
   font-family: monospace;
 }
 
+.instrucoes-img-wrap {
+  margin-top: 28px;
+}
+
+.instrucoes-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background: #111;
+}
+
 /* VIDEO */
 .video-wrap {
   position: relative;
