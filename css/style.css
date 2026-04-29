@@ -2,6 +2,10 @@
 
 body {
   background-color: #1b1b1b;
+  background-image: url('../img/fundo_site.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   color: #f0f0f0;
   font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 16px;
@@ -53,24 +57,24 @@ nav a:hover { color: #c8f500; }
     url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=1400&q=80') center/cover no-repeat;
 }
 
-#hero h1 {
+.hero-logo {
   position: relative;
   z-index: 2;
-  font-size: 72px;
-  font-weight: 900;
-  color: #c8f500;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  text-shadow: 3px 3px 0 rgba(0,0,0,0.8), 0 0 40px rgba(200,245,0,0.25);
+  max-width: 520px;
+  width: 80%;
   margin-bottom: 16px;
+  filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.8));
 }
 
 #hero p {
   position: relative;
   z-index: 2;
   font-size: 20px;
-  color: #eee;
+  color: #fff;
   letter-spacing: 1px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px #111;
+  text-shadow: 2px 2px 0px #111, 4px 4px 6px rgba(0,0,0,0.7);
 }
 
 /* SECTIONS */
