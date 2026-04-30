@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tennis Royale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +24,9 @@
 
 <!-- HERO -->
 <div id="hero">
-  <div class="hero-bg"></div>
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="img/hero.mp4" type="video/mp4">
+  </video>
   <img class="hero-logo" src="img/logo_tennis_royale.png" alt="Tennis Royale">
   <p>Domine a quadra. Elimine o seu adversario!</p>
 </div>
@@ -222,9 +227,21 @@
 <!-- DOWNLOAD -->
 <section id="download">
   <h2>Download</h2>
-  <div class="download-card">
-    <p>Baixe o jogo clicando aqui</p>
-    <a href="Tennis Royale.zip" download class="btn-download">Baixar</a>
+  <div class="download-content">
+    <div class="download-card">
+      <p>Baixe o jogo clicando aqui</p>
+      <a href="Tennis Royale.zip" download class="btn-download">Baixar</a>
+    </div>
+
+    <div class="download-instructions">
+      <h3>Como rodar o Pygame</h3>
+      <ol class="run-steps">
+        <li>Extraia o arquivo <strong>Tennis Royale.zip</strong>.</li>
+        <li>Abra a pasta do jogo no terminal.</li>
+        <li>Instale o Pygame com <span class="key">python -m pip install pygame</span>.</li>
+        <li>Rode o jogo com <span class="key">python main.py</span>.</li>
+      </ol>
+    </div>
   </div>
 </section>
 
